@@ -1,0 +1,25 @@
+@import '../colors';
+@import '../fonts';
+.about-me
+{
+    $root:&;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 120px 0 107px 0;
+    background: $bg-color-grey;
+    &__title
+    {
+        @include bold(34px, $primery)
+    }
+    
+    &__item
+    {
+        margin-top: 45px;
+        @include regular(18px, $primery)
+    }
+    &__item:nth-child(2)
+    {
+        margin-top: 20px;
+    }
+}
