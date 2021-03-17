@@ -1,0 +1,46 @@
+@import '../fonts';
+@import '../colors';
+
+.footer
+{
+    $root:&;
+    text-align: center;
+    padding: 115px 0 125px;
+    &__title
+    {
+        @include bold(34px, $primery);
+    }
+    &__subtitle
+    {
+        @include regular(18px,$primery);
+        margin: 20px 0 30px;
+    }
+    &__button
+    {
+        width: 180px;
+        height: 42px;
+        background: #000;
+        @include bold(18px,#fff);
+        border-radius: 21px;
+        border:none;
+        outline: none;
+    }
+    &__icons
+    {
+        display: flex;
+        justify-content: space-between;
+        max-width: 350px;
+        margin: 0 auto;
+        margin-top: 85px;
+        margin-bottom: 45px;
+    }
+    &__icons img
+    {
+        width: 42px;
+        height: 42px;
+    }
+    &__like
+    {
+        @include regular(18px,$minor)
+    }
+}

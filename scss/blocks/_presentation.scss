@@ -35,6 +35,7 @@
     &__name
     {
         @include bold(48px,$primery);
+        margin-bottom: -13px;
     }
 
     &__except
@@ -46,10 +47,8 @@
     &__language
     {
         transform: rotate(-90deg);
-        width: 100px;
-        display: flex;
-        justify-content: space-between;
-        padding-left: 45px;
+        margin-right: -48px;
+        padding-left: 50px;
         text-transform: uppercase;
         @include bold(16px, $primery);
         cursor: pointer;

@@ -1,0 +1,28 @@
+@import '../fonts';
+@import '../colors';
+.portfolio
+{
+    padding: 110px 0 95px;
+    background-color: $bg-color-grey;
+    text-align: center;
+    $root:&;
+    &__title
+    {
+        @include bold(34px,$primery);
+        margin-bottom:50px;
+    }
+    &__card>p
+    {
+        @include regular(18px, $primery);
+        margin: 45px 0 100px;
+        text-decoration: underline;
+    }
+    &__card:last-child>p 
+    {
+        margin-bottom: 0;
+    };
+    &__card__img
+    {
+        width: 100%;
+    }
+}
