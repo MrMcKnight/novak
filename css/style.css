@@ -131,4 +131,49 @@
 }
 .about-me__item:nth-child(2) {
   margin-top: 20px;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+.skills {
+  text-align: center;
+  padding: 90px 0 110px;
+}
+.skills__title {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 34px;
+  color: #070707;
+}
+.skills__subtitle {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #070707;
+  margin: 70px 0 84px;
+}
+.skills__features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  color: #828282;
+}
+.skills__features__item > p {
+  margin: 25px 0 40px;
+}
+.skills__features__item:last-child > p {
+  margin-bottom: 62px;
 }/*# sourceMappingURL=style.css.map */

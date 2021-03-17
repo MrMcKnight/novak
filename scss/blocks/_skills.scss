@@ -1,0 +1,35 @@
+@import '../fonts';
+@import '../colors';
+.skills
+{
+    $root:&;
+    text-align: center;
+    padding:90px 0 110px;
+    &__title
+    {
+        @include bold(34px,$primery);
+    }
+    &__subtitle
+    {
+        @include regular(18px, $primery);
+        margin: 70px 0 84px;
+
+    }
+    &__features
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include bold(18px,$minor);
+        &__item>p 
+        {
+            margin:25px 0 40px;
+        }
+        &__item:last-child>p
+        {
+            margin-bottom: 62px;
+        }
+
+
+    }
+}
